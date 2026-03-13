@@ -49,3 +49,33 @@ body{
     font-size: 28px;
     color: white;
 }
+
+.estadios1{
+  display: flex;
+  justify-content: space-between;
+  background-color: violet;
+  padding: 20px 20px 20px 20px;
+  margin: 50px 50px 50px 50px;
+}
+
+.estadios1 img{
+  padding: 10px 10px 10px 10px;
+  margin: 5px 5px 5px 5px;
+  width: 80%;
+}
+
+
+.estadios2{
+  display: flex;
+  justify-content: space-between;
+  background-color: violet;
+  padding: 20px 20px 20px 20px;
+  margin: 50px 50px 50px 50px;
+}
+
+.estadios2 img{
+  padding: 10px 10px 10px 10px;
+  margin: 5px 5px 5px 5px;
+  width: 80%;
+}
+
