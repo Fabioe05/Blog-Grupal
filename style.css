@@ -1,18 +1,13 @@
-<<<<<<<<< Temporary merge branch 1
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
-
-body {
-  background-color: #0b0633;
-  height: 100vh;
-}
-
-header {
-    height: 50px;
-    background-color: blueviolet;
+body{
+    background: linear-gradient(to bottom, #56042C 60%, black 100%);
+    background-size: cover;
+    background-attachment: fixed;
+     height: 100vh;
 }
 
 #navbar {
