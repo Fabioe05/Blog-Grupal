@@ -1,12 +1,12 @@
+body{
+    background: linear-gradient(to bottom,#56042C 20%, black 80%);
+    background-size: cover;
+    background-attachment: fixed;
+}
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-}
-
-body {
-  background-color: #0b0633;
-  height: 100vh;
 }
 
 header {
