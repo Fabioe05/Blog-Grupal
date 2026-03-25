@@ -22,7 +22,7 @@ body {
 
 #navbar div {
   color: #ffffff;
-  font-size: 36px;
+  font-size: 28px;
 }
 #nav-links {
   display: flex;
@@ -33,7 +33,7 @@ body {
   color: white;
   text-decoration: none;
   padding: 7px 40px;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 #nav-links li a:hover {
@@ -48,14 +48,14 @@ body {
 }
 
 #main-container img {
-  width: 800px;
+  width: 700px;
   margin: 110px 0;
   border-radius: 30px;
   box-shadow: 20px 20px 14px black;
 }
 
 #main-container p {
-  font-size: 28px;
+  font-size: 24px;
   color: white;
   margin: 50px;
 }
@@ -110,7 +110,7 @@ hr {
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 28px;
   color: #ffffff;
   padding: 50px;
   display: flex;
@@ -121,6 +121,7 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
   margin: 50px;
 }
 
@@ -138,7 +139,7 @@ h2 {
 
 #sede-container-1 p {
   color: #ffffff;
-  font-size: 28px;
+  font-size: 24px;
   padding: 60px;
 }
 
@@ -146,6 +147,7 @@ h2 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-evenly;
   margin: 50px;
 }
 
@@ -163,13 +165,14 @@ h2 {
 
 #sede-container-2 p {
   color: #ffffff;
-  font-size: 28px;
+  font-size: 24px;
   padding: 60px;
 }
 
 #grupos-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
   gap: 30px;
   margin: 50px;
 }
@@ -188,6 +191,7 @@ h2 {
   font-size: 20px;
   color: white;
   padding: 30px 100px;
+  text-align: center;
 }
 
 #fases-container {
@@ -197,7 +201,7 @@ h2 {
 }
 
 #fases-container img {
-  width: 800px;
+  width: 1200px;
   margin: 50px 0;
   border-radius: 30px;
   box-shadow: 20px 20px 14px black;
@@ -212,6 +216,7 @@ h2 {
   color: white;
   padding: 7px 40px;
   font-size: 20px;
+  text-align: justify;
 }
 
 #campeon-container img {
@@ -224,17 +229,25 @@ h2 {
 
 #campeon-container {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
+
 #campeon-container img:hover {
   transform: scale(1.1);
+}
+
+#campeon-container p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
 }
 
 .burbuja-arriba {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #007bff;
+  background-color: #dd6119;
   color: white;
   width: 50px;
   height: 50px;
@@ -253,6 +266,19 @@ h3 {
   font-size: 20px;
 }
 
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 45px 0 ;
+  color: white;
+  font-size: 20px;
+}
+
+footer a {
+  color: #dd6119;
+  text-decoration: none;
+}
+
 @media (max-width: 480px) {
   header {
     display: none;
@@ -264,6 +290,7 @@ h3 {
 
   #main-container img {
     width: 40vh;
+    margin: 40px 0 ;
   }
 
   #main-container p {
@@ -272,15 +299,19 @@ h3 {
 
   h2 {
     font-size: 20px;
+    padding: 25px 0;
+    border-bottom: solid #dd6119;
   }
 
   h3 {
     font-size: 16px;
+    padding: 20px 0;
   }
 
   #sede-container-1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   #sede-container-1 img {
@@ -294,6 +325,7 @@ h3 {
   #sede-container-2 {
     display: flex;
     flex-direction: column-reverse;
+    align-items: center;
   }
 
   #sede-container-2 img {
@@ -306,6 +338,7 @@ h3 {
   .estadios1 {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .estadios1 img {
@@ -315,6 +348,7 @@ h3 {
   .estadios2 {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .estadios2 img {
@@ -324,6 +358,7 @@ h3 {
   #grupos-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   #grupos-container img {
@@ -341,6 +376,7 @@ h3 {
   #fases-container {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   #fases-container img {
@@ -360,5 +396,8 @@ h3 {
   #campeon-container img {
     width: 40vh;
   }
-  
+
+  #campeon-container p {
+    font-size: 16px;
+  }
 }
