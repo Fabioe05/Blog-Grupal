@@ -172,9 +172,10 @@ h2 {
 #grupos-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  justify-content: center;
+  justify-items: center;
   gap: 30px;
   margin: 50px;
+  justify-content: center;
 }
 
 #grupos-container img {
@@ -217,6 +218,7 @@ h2 {
   padding: 7px 40px;
   font-size: 16px;
   text-align: justify;
+  margin: 0 100px;
 }
 
 #campeon-container img {
@@ -238,7 +240,7 @@ h2 {
 }
 
 #campeon-container p {
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   text-align: center;
 }
@@ -269,7 +271,7 @@ h3 {
 footer {
   display: flex;
   justify-content: center;
-  padding: 45px 0 ;
+  padding: 45px 0;
   color: white;
   font-size: 20px;
 }
@@ -289,12 +291,13 @@ footer a {
   }
 
   #main-container img {
-    width: 40vh;
-    margin: 40px 0 ;
+    width: 50vh;
+    margin: 40px 0;
   }
 
   #main-container p {
-    font-size: 16px;
+    font-size: 12px;
+    text-align: justify;
   }
 
   h2 {
@@ -319,7 +322,8 @@ footer a {
   }
 
   #sede-container-1 p {
-    font-size: 16px;
+    font-size: 12px;
+    text-align: justify;
   }
 
   #sede-container-2 {
@@ -332,7 +336,8 @@ footer a {
     width: 40vh;
   }
   #sede-container-2 p {
-    font-size: 16px;
+    font-size: 12px;
+    text-align: justify;
   }
 
   .estadios1 {
@@ -342,7 +347,8 @@ footer a {
   }
 
   .estadios1 img {
-    width: 40vh;
+    width: 45vh;
+    height: 150px;
   }
 
   .estadios2 {
@@ -352,7 +358,8 @@ footer a {
   }
 
   .estadios2 img {
-    width: 40vh;
+    width: 45vh;
+    height: 150px;
   }
 
   #grupos-container {
@@ -366,11 +373,13 @@ footer a {
   }
 
   #grupos-container p {
-    font-family: 16px;
+    font-family: 12px;
+    text-align: justify;
   }
 
   #info-grupos {
-    font-size: 16px;
+    font-size: 12px;
+    text-align: justify;
   }
 
   #fases-container {
@@ -384,7 +393,9 @@ footer a {
   }
 
   #fases-container p {
-    font-size: 16px;
+    font-size: 12px;
+    text-align: justify;
+    margin: 0 45px;
   }
 
   #campeon-container {
@@ -398,6 +409,132 @@ footer a {
   }
 
   #campeon-container p {
+    font-size: 12px;
+    margin: 0px 45px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 480px, max-width: 768px) {
+  header {
+    display: none;
+  }
+  #main-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #main-container img {
+    width: 70vh;
+    margin: 40px 0;
+  }
+
+  #main-container p {
     font-size: 16px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 20px;
+    padding: 25px 0;
+    border-bottom: solid #dd6119;
+  }
+
+  h3 {
+    font-size: 16px;
+    padding: 20px 0;
+  }
+
+  #sede-container-1 img {
+    width: 45vh;
+  }
+
+  #sede-container-1 p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  #sede-container-2 img {
+    width: 45vh;
+  }
+  #sede-container-2 p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  .estadios1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .estadios1 img {
+    width: 70vh;
+    height: 300px;
+  }
+
+  .estadios2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .estadios2 img {
+    width: 70vh;
+    height: 300px;
+  }
+
+  #grupos-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin: 30px;
+    justify-items: center;
+    justify-content: center;
+  }
+
+  #grupos-container img {
+    width: 45vh;
+  }
+
+  #grupos-container p {
+    font-family: 16px;
+    text-align: center;
+  }
+
+  #info-grupos {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  #fases-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #fases-container img {
+    width: 70vh;
+  }
+
+  #fases-container p {
+    font-size: 16px;
+    text-align: justify;
+  }
+
+  #campeon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #campeon-container img {
+    width: 70vh;
+  }
+
+  #campeon-container p {
+    font-size: 16px;
+    margin: 0 60px;
+    text-align: center;
   }
 }
